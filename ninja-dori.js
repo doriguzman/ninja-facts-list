@@ -15,11 +15,23 @@ submit.addEventListener('click', function(event){
 
 
 document.addEventListener('click', function(event){
-    if (event.target.tagName==='LI'){
+console.log(event.target.className)
+   
+    if(event.target.tagName === 'LI' && event.target.className ==='uppercase'){
+        console.log('trying to make it lowercase')
         var clicked= event.target
-        clicked.style.textTransform = 'uppercase'        
+        event.target.classList.remove('uppercase') 
+        clicked.style.textTransform = 'lowercase'   
+        console.log(clicked.style)
+       
+    }else if (event.target.tagName==='LI'){
+        var clicked= event.target
+        clicked.style.textTransform = 'uppercase'   
+        event.target.classList.add('uppercase')     
     }
+
 })
+
 
 
 
