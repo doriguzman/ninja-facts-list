@@ -1,0 +1,12 @@
+body, #textbox, #button{
+    background-color: black;
+    color:white;
+    font-family: 'Neucha', cursive;
+}
+
+li:hover, h1:hover, #textbox:hover, #button:hover{
+    background-color: yellow;
+    color:red;
+    cursor: pointer;
+}
+
