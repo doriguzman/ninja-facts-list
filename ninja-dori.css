@@ -1,12 +1,30 @@
-body, #textbox, #button{
-    background-color: black;
-    color:white;
-    font-family: 'Neucha', cursive;
+body,
+#textbox,
+#button {
+  background-color: black;
+  color: white;
+  font-family: "Neucha", cursive;
+  font-size: 20px;
+  text-align: center;
+  list-style-position: inside;
 }
 
-li:hover, h1:hover, #textbox:hover, #button:hover{
-    background-color: yellow;
-    color:red;
-    cursor: pointer;
+form {
+  margin-left: 50px;
+}
+li:hover,
+h1:hover,
+#textbox:hover,
+#button:hover {
+  background-color: yellow;
+  color: red;
+  cursor: pointer;
 }
 
+ol {
+  margin: 10px;
+  padding: 10px;
+}
+li {
+  margin: 10px;
+}
